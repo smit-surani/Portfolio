@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smit Surani | PHP Developer & UI/UX Designer</title>
+
+    <!-- SEO Meta -->
+    <meta name="description"
+        content="Portfolio of Smit Surani, PHP Developer & UI/UX Designer from Ahmedabad, India. Crafting modern, user-friendly web applications.">
+    <meta name="author" content="Smit Surani" />
+
+    <!-- Favicon (optional placeholder) -->
+    <link rel="icon" type="image/png" href="assets/images/profile.jpg" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="80">
+    <!-- Back to top button -->
+    <button id="backToTop" class="btn btn-primary shadow-sm">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- Navbar -->
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark-glass">
+        <div class="container">
+            <a class="navbar-brand fw-bold logo-text" href="#home">Smit <span>Surani</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-lg-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section d-flex align-items-center">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7" data-aos="fade-right">
+                    <p class="text-uppercase text-accent fw-semibold mb-2">PHP Developer &amp; UI/UX Designer</p>
+                    <h1 class="display-4 fw-bold mb-3">
+                        Hi, I’m <span class="text-accent">Smit Surani</span>
+                    </h1>
+                    <h2 class="h4 text-muted mb-3">
+                        <span id="typedText" class="typed-text"></span>
+                    </h2>
+                    <p class="lead text-light-muted mb-4">
+                        Crafting modern, user-friendly web applications with clean code and thoughtful design.
+                    </p>
+                    <div class="d-flex flex-wrap gap-3">
+                        <a href="#" class="btn btn-primary btn-lg shadow-custom">
+                            <i class="fa-solid fa-download me-2"></i>Download Resume
+                        </a>
+                        <a href="#contact" class="btn btn-outline-light btn-lg shadow-custom">
+                            <i class="fa-solid fa-envelope me-2"></i>Contact Me
+                        </a>
+                    </div>
+                    <div class="mt-4 d-flex align-items-center gap-3">
+                        <span class="text-muted small">Connect with me</span>
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/in/smit-surani-6a028a300" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 text-center mt-5 mt-lg-0" data-aos="fade-left">
+                    <div class="hero-profile-wrapper">
+                        <div class="hero-glow"></div>
+                        <img src="assets/images/2.jpeg" alt="Profile of Smit Surani"
+                            class="img-fluid rounded-circle hero-profile" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-gradient-bg"></div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section-padding bg-section">
+        <div class="container">
+            <div class="row align-items-center gy-4">
+                <div class="col-lg-4 text-center" data-aos="fade-up">
+                    <img src="assets/images/1.png" alt="Smit Surani" class="img-fluid rounded-circle about-image" />
+                </div>
+                <div class="col-lg-8" data-aos="fade-up" data-aos-delay="100">
+                    <h2 class="section-title">About Me</h2>
+                    <p class="section-subtitle">
+                        PHP Developer &amp; UI/UX Designer based in Ahmedabad, India.
+                    </p>
+                    <p class="text-light-muted mb-3">
+                        I am a PHP Developer with hands-on experience in building dynamic web applications and creating
+                        user-centric interfaces. I focus on writing clean, maintainable code and designing intuitive
+                        experiences that make products easy to use and visually appealing.
+                    </p>
+                    <div class="row gy-3">
+                        <div class="col-md-6">
+                            <ul class="list-unstyled about-list">
+                                <li><i class="fa-solid fa-code me-2 text-accent"></i>Skilled in PHP, MySQL, HTML, CSS,
+                                    Bootstrap</li>
+                                <li><i class="fa-solid fa-layer-group me-2 text-accent"></i>Passionate about clean UI
+                                    &amp; smooth UX flows</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul class="list-unstyled about-list">
+                                <li><i class="fa-solid fa-pen-ruler me-2 text-accent"></i>Tools: Figma, Canva</li>
+                                <li><i class="fa-solid fa-location-dot me-2 text-accent"></i>Ahmedabad, India</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section-padding">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="section-title">Skills</h2>
+                <p class="section-subtitle">
+                    A blend of backend logic and frontend design to build complete web experiences.
+                </p>
+            </div>
+            <div class="row g-4">
+                <!-- Skill Card -->
+                <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up">
+                    <div class="skill-card text-center">
+                        <div class="skill-icon mb-2">
+                            <i class="fa-brands fa-php"></i>
+                        </div>
+                        <h5 class="mb-2">PHP</h5>
+                        <div class="progress progress-custom">
+                            <div class="progress-bar" role="progressbar" style="width: 90%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="50">
+                    <div class="skill-card text-center">
+                        <div class="skill-icon mb-2">
+                            <i class="fa-solid fa-database"></i>
+                        </div>
+                        <h5 class="mb-2">MySQL</h5>
+                        <div class="progress progress-custom">
+                            <div class="progress-bar" role="progressbar" style="width: 85%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+                    <div class="skill-card text-center">
+                        <div class="skill-icon mb-2">
+                            <i class="fa-brands fa-html5"></i>
+                        </div>
+                        <h5 class="mb-2">HTML</h5>
+                        <div class="progress progress-custom">
+                            <div class="progress-bar" role="progressbar" style="width: 95%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="150">
+                    <div class="skill-card text-center">
+                        <div class="skill-icon mb-2">
+                            <i class="fa-brands fa-css3-alt"></i>
+                        </div>
+                        <h5 class="mb-2">CSS</h5>
+                        <div class="progress progress-custom">
+                            <div class="progress-bar" role="progressbar" style="width: 90%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+                    <div class="skill-card text-center">
+                        <div class="skill-icon mb-2">
+                            <i class="fa-brands fa-bootstrap"></i>
+                        </div>
+                        <h5 class="mb-2">Bootstrap</h5>
+                        <div class="progress progress-custom">
+                            <div class="progress-bar" role="progressbar" style="width: 90%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="250">
+                    <div class="skill-card text-center">
+                        <div class="skill-icon mb-2">
+                            <i class="fa-brands fa-figma"></i>
+                        </div>
+                        <h5 class="mb-2">Figma</h5>
+                        <div class="progress progress-custom">
+                            <div class="progress-bar" role="progressbar" style="width: 80%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+                    <div class="skill-card text-center">
+                        <div class="skill-icon mb-2">
+                            <i class="fa-solid fa-palette"></i>
+                        </div>
+                        <h5 class="mb-2">Canva</h5>
+                        <div class="progress progress-custom">
+                            <div class="progress-bar" role="progressbar" style="width: 75%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section-padding bg-section">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="section-title">Experience</h2>
+                <p class="section-subtitle">
+                    Professional journey and hands-on work in PHP development.
+                </p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="timeline">
+                        <div class="timeline-item" data-aos="fade-up">
+                            <div class="timeline-icon">
+                                <i class="fa-solid fa-briefcase"></i>
+                            </div>
+                            <div class="timeline-content">
+                                <h5 class="mb-1">PHP Developer – Dhanushdigisol</h5>
+                                <span class="text-muted small d-block mb-2">Apr 2024 – Present</span>
+                                <ul class="mb-0">
+                                    <li>Developed dynamic PHP web applications tailored to client requirements.</li>
+                                    <li>Integrated REST APIs for seamless data exchange between systems.</li>
+                                    <li>Handled MySQL databases focusing on performance and optimization.</li>
+                                    <li>Debugged and improved application performance for better user experience.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section-padding">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="section-title">Projects</h2>
+                <p class="section-subtitle">
+                    Selected work showcasing PHP, MySQL, and user-focused design.
+                </p>
+            </div>
+            <div class="row g-4">
+                <!-- Project 1 -->
+                <div class="col-md-6" data-aos="fade-up">
+                    <div class="project-card h-100">
+                        <div class="project-icon">
+                            <i class="fa-solid fa-bus"></i>
+                        </div>
+                        <h5 class="mb-2">Bus Booking System</h5>
+                        <p class="text-light-muted mb-3">
+                            A complete bus ticket booking platform with real-time search, secure payments, and
+                            admin management.
+                        </p>
+                        <ul class="mb-3">
+                            <li>Search buses &amp; book tickets seamlessly.</li>
+                            <li>Integrated Razorpay for secure online payments.</li>
+                            <li>Admin dashboard for route, bus, and booking management.</li>
+                            <li>User authentication &amp; booking history tracking.</li>
+                        </ul>
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="badge tech-badge">PHP</span>
+                            <span class="badge tech-badge">MySQL</span>
+                            <span class="badge tech-badge">Bootstrap</span>
+                            <span class="badge tech-badge">Razorpay API</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-card h-100">
+                        <div class="project-icon">
+                            <i class="fa-solid fa-school"></i>
+                        </div>
+                        <h5 class="mb-2">School Management System</h5>
+                        <p class="text-light-muted mb-3">
+                            A role-based management system for schools to handle users, academics, and data securely.
+                        </p>
+                        <ul class="mb-3">
+                            <li>Role-based login for Admin, Teacher, and Student.</li>
+                            <li>Implemented CRUD operations for classes, students, and records.</li>
+                            <li>Secure PHP + MySQL backend with validation.</li>
+                            <li>REST APIs for scalable integrations and future modules.</li>
+                        </ul>
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="badge tech-badge">PHP</span>
+                            <span class="badge tech-badge">MySQL</span>
+                            <span class="badge tech-badge">Bootstrap</span>
+                            <span class="badge tech-badge">REST API</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding bg-section">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-lg-5" data-aos="fade-right">
+                    <h2 class="section-title">Contact</h2>
+                    <p class="section-subtitle mb-4">
+                        Let’s discuss your next project or collaboration opportunity.
+                    </p>
+                    <ul class="list-unstyled contact-info">
+                        <li>
+                            <i class="fa-solid fa-envelope text-accent me-2"></i>
+                            <span>Email:</span> <a href="mailto:smirsuranibca@gmail.com">smirsuranibca@gmail.com</a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-phone text-accent me-2"></i>
+                            <span>Phone:</span> <a href="tel:+919825195351">+91 98251 95351</a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-location-dot text-accent me-2"></i>
+                            <span>Location:</span> Ahmedabad, India
+                        </li>
+                    </ul>
+                    <div class="mt-3">
+                        <span class="text-muted small d-block mb-2">Social</span>
+                        <div class="social-links">
+                            <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7" data-aos="fade-left">
+                    <div class="contact-card">
+                        <h5 class="mb-3">Send a Message</h5>
+                        <!-- UI only form -->
+                        <form action="https://formsubmit.co/smirsuranibca@gmail.com" method="POST">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label for="name" class="form-label">Name</label>
+                                    <input type="text" class="form-control" id="name" placeholder="Your name" />
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="email" placeholder="you@example.com" />
+                                </div>
+                                <div class="col-12">
+                                    <label for="subject" class="form-label">Subject</label>
+                                    <input type="text" class="form-control" id="subject" placeholder="How can I help?" />
+                                </div>
+                                <div class="col-12">
+                                    <label for="message" class="form-label">Message</label>
+                                    <textarea class="form-control" id="message" rows="4"
+                                        placeholder="Write your message here..."></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button type="button" class="btn btn-primary w-100">
+                                        <i class="fa-solid fa-paper-plane me-2"></i>Send Message
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-3">
+        <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between gap-2">
+            <p class="mb-0 small text-muted">
+                &copy; <span id="year"></span> Smit Surani. All rights reserved.
+            </p>
+            <p class="mb-0 small text-muted">
+                Designed &amp; Developed by <span class="text-accent">Smit Surani</span>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
+
+
