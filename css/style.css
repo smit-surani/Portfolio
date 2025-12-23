@@ -60,6 +60,14 @@ a {
   }
 }
 
+.logo-img {
+  width: auto;
+  height: 32px;
+  object-fit: contain;
+  display: block;
+  flex-shrink: 0;
+}
+
 .bg-section {
   background: radial-gradient(circle at top right, #141a30 0, transparent 55%),
     rgba(6, 9, 20, 0.95);
@@ -83,10 +91,24 @@ a {
   border-bottom: 1px solid var(--border-subtle);
 }
 
+/* Logo Wrapper */
+.logo-wrapper {
+  gap: 0.25rem;
+  text-decoration: none;
+  transition: transform var(--transition-fast);
+}
+
+.logo-wrapper:hover {
+  transform: scale(1.02);
+}
+
 .navbar-brand.logo-text {
   letter-spacing: 0.04em;
   font-size: 1.1rem;
   text-transform: uppercase;
+  white-space: nowrap;
+  line-height: 1;
+  margin: 0;
 }
 
 .navbar-brand.logo-text span {
@@ -592,3 +614,69 @@ a {
 }
 
 
+/* =========================
+   Logo Responsive Styles
+   ========================= */
+
+/* Tablet screens */
+@media (max-width: 992px) {
+  .logo-wrapper {
+    gap: 0.2rem;
+  }
+
+  .navbar-brand.logo-text {
+    font-size: 1rem;
+    letter-spacing: 0.03em;
+  }
+
+  .logo-img {
+    height: 28px;
+  }
+}
+
+/* Mobile screens */
+@media (max-width: 768px) {
+  .logo-wrapper {
+    gap: 0.15rem;
+  }
+
+  .navbar-brand.logo-text {
+    font-size: 0.9rem;
+    letter-spacing: 0.02em;
+  }
+
+  .logo-img {
+    height: 24px;
+  }
+}
+
+/* Small mobile screens */
+@media (max-width: 576px) {
+  .logo-wrapper {
+    gap: 0.1rem;
+  }
+
+  .navbar-brand.logo-text {
+    font-size: 0.85rem;
+    letter-spacing: 0.01em;
+  }
+
+  .logo-img {
+    height: 20px;
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 400px) {
+  .logo-wrapper {
+    gap: 0.08rem;
+  }
+
+  .navbar-brand.logo-text {
+    font-size: 0.75rem;
+  }
+
+  .logo-img {
+    height: 18px;
+  }
+}
